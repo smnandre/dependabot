@@ -1,0 +1,11 @@
+{
+    "name": "acme/blog-bundle",
+    "description": "A modern Symfony bundle for the Acme Blog.",
+    "type": "symfony-bundle",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Acme\BlogBundle\": "src/"
+        }
+    }
+}

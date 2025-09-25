@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DefaultController!{% endblock %}
+
+{% block body %}
+<style>
+    svg {
+        width: 50px;
+        height: 50px;
+        vertical-align: middle;
+    }
+    main {
+        margin: 2rem auto;
+        max-width: 800px;
+        display: grid;
+        gap: 4rem;
+    }
+    section {
+        padding: 1rem;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+    }
+</style>
+
+<main>
+    <section>
+        <h2>Bundle Live Component 'BlogComponent'</h2>
+        {{ component('BlogComponent') }}
+    </section>
+
+    <section>
+        <h2>App Template 'logo.html.twig'</h2>
+        {{ include('components/logo.html.twig') }}
+    </section>
+
+    <section>
+        <h2>App Component 'logo' (an anonymous TWIG component)</h2>
+        <p>Or ... is it ?</p>
+        {{ component('logo') }}
+    </section>
+</main>
+{% endblock %}
